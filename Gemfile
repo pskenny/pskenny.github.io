@@ -8,7 +8,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 3.8.3"
-gem "minima"
+gem 'minima', '~> 2.5', '>= 2.5.1'
 # Github Pages plugin
 gem "github-pages", "~> 206", group: :jekyll_plugins
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
