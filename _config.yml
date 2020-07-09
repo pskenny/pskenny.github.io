@@ -1,13 +1,13 @@
 title: Paul Kenny
 email: your-email@example.com
-description: "I'm a final year student in Software Development, Galway-Mayo Institute Of Technology" 
+description: "I'm a Software Development graduate." 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pskenny.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  pskenny
 repository: pskenny/pskenny.github.io
 
 # Build settings
-theme: jekyll-theme-hacker
+theme: minima
 plugins:
   - jekyll-feed
 
