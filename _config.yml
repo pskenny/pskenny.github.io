@@ -8,6 +8,9 @@ repository: pskenny/pskenny.github.io
 header_pages:
   - blog.md
 
+minima:
+  skin: dark
+
 # Build settings
 theme: minima
 plugins:
