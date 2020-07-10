@@ -7,6 +7,7 @@ repository: pskenny/pskenny.github.io
 
 header_pages:
   - blog.md
+  - ideas.md
 
 minima:
   skin: dark
