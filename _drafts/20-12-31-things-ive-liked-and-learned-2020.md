@@ -37,5 +37,5 @@ _Inspired by Fogus' "The best things and stuff..."_
 
 ## Music
 
-- King Gizzard And The Lizard Wizard
+- [King Gizzard & The Lizard Wizard](https://kinggizzardandthelizardwizard.com/)
 - [Mort Garson's](https://open.spotify.com/artist/0WmzT6tMLhdST5BfYagbha?si=WH47sLZCQI2IV2Ep1qa9oQ) [Mother Earth's Plantasia](https://youtu.be/l0vrsO3_HpU). Plant music but good for people too.
