@@ -24,6 +24,7 @@ _Inspired by Fogus' "The best things and stuff..."_
 
 ## Articles/Blog Posts
 
+- [How To Understand Things](https://nabeelqu.co/understanding).
 - [Uncomputable Numbers](https://medium.com/cantors-paradise/uncomputable-numbers-ee528830d295). Great blog post 
 - [The Computer Scientist Who Can’t Stop Telling Stories](https://www.quantamagazine.org/computer-scientist-donald-knuth-cant-stop-telling-stories-20200416/). Interesting look how an interesting developer does. *"I write an average of five new programs every week. Poets have to write poems. I have to write computer programs."*
 - [Code is Engineering, Types are Science](https://www.tweag.io/posts/2020-03-05-peirce.html). Easy to understand view of reasoning related in programming.
