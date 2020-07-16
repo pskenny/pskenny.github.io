@@ -28,3 +28,13 @@ Additional features:
 ### Shazam But It Adds To Local Music Library
 
 Listens to audio, finds out what song it is (see [acoustic fingerprinting](https://en.wikipedia.org/wiki/Acoustic_fingerprint)), checks Spotify and adds it to your music library. Example: finds song metadata, finds it on Youtube, asks if it can get it as MP3 and put it in filesystem.
+
+### Markdown To Wallpaper
+
+Display contents of a Markdown file as the wallpaper of your desktop.
+
+Additional features:
+
+- Different styles
+- Autostart on login option
+- Regenerate on file changes
