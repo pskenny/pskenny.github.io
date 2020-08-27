@@ -1,6 +1,6 @@
 title: Paul Kenny
-tagline: "A software developer's blog"
-description: "Software development graduates blog and portfolio." 
+tagline: "A software developer's blog and portfolio"
+description: "PK's blog and portfolio" 
 author: Paul Kenny
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pskenny.github.io" # the base hostname & protocol for your site, e.g. http://example.com
