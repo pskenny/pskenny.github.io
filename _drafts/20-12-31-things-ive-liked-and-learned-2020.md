@@ -34,6 +34,8 @@ _Inspired by Fogus' "The best things and stuff..."_
 
 - [Click Here To Kill Everybody](https://www.schneier.com/books/click_here/) by Bruce Schneier
 - Art & Fear
+- I Am A Strange Loop by Douglas Hofstadter
+- Unrestricted Warfare
 
 ## Music
 
