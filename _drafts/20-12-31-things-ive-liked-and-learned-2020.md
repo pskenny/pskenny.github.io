@@ -29,6 +29,7 @@ _Inspired by Fogus' "The best things and stuff..."_
 - [The Computer Scientist Who Can’t Stop Telling Stories](https://www.quantamagazine.org/computer-scientist-donald-knuth-cant-stop-telling-stories-20200416/). Interesting look how an interesting developer does. *"I write an average of five new programs every week. Poets have to write poems. I have to write computer programs."*
 - [Code is Engineering, Types are Science](https://www.tweag.io/posts/2020-03-05-peirce.html). Easy to understand view of reasoning related in programming.
 - [Gresham’s Law: Why Bad Drives Out Good As Time Passes](https://fs.blog/2009/12/mental-model-greshams-law/). A small bit on [Gresham's Law](https://en.wikipedia.org/wiki/Gresham%E2%80%99s_Law). Once I knew I couldn't help but see it. 
+- [Reality has a surprising amount of detail](http://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) by John Salvatier.
 
 ## Books
 
