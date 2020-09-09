@@ -38,3 +38,7 @@ Additional features:
 - Different styles
 - Autostart on login option
 - Regenerate on file changes
+
+### 🛒 Supermarket Item Label List
+
+Take a picture of a item tag in a supermarket to gather and sort information into a list e.g. brand, item name, weight/size/quantity, code number. Example use: while restocking shelves the restocker must take down items to retrieve from storage area. Writing this down takes time. Taking a picture and letting a program sort the item information and categorising is it takes less time.
