@@ -7,16 +7,16 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.3"
+gem "jekyll", "~> 3.9.0"
 gem 'minima', '~> 2.5', '>= 2.5.1'
 # Github Pages plugin
-gem "github-pages", "~> 206", group: :jekyll_plugins
+gem "github-pages", "~> 209", group: :jekyll_plugins
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.13.0"
+  gem "jekyll-feed", "~> 0.15.1"
 end
 
 # Performance-booster for watching directories on Windows
