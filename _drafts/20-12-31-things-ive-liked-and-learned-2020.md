@@ -34,9 +34,10 @@ _Inspired by Fogus' "The best things and stuff..."_
 ## Books
 
 - [Click Here To Kill Everybody](https://www.schneier.com/books/click_here/) by Bruce Schneier
-- Art & Fear
+- Art & Fear by David Bayles and Ted Orland
 - I Am A Strange Loop by Douglas Hofstadter
-- Unrestricted Warfare
+- Unrestricted Warfare by Qiao Liang and Wang Xiangsui
+- Meditations by Marcus Aurelius
 
 ## Music
 
