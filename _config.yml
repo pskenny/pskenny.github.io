@@ -1,19 +1,34 @@
 title: Paul Kenny
 tagline: "A software developer's blog and portfolio"
-description: "PK's blog and portfolio" 
+description: "PK's blog and portfolio"
 author: Paul Kenny
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pskenny.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://pskenny.github.io"
 
-github_username:  pskenny
+github_username: pskenny
 repository: pskenny/pskenny.github.io
 
 include: ["_pages"]
 
-# Build settings
+defaults:
+  # _pages
+  - scope:
+      path: "_pages/ideas.md"
+      type: pages
+    values:
+      permalink: "ideas"
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_pages/blog.md"
+      type: pages
+    values:
+      permalink: "blog"
+      layout: single
+      author_profile: true
+
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
-
