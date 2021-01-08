@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Things I've Liked And Learned: 2020"
 ---
 

@@ -8,15 +8,12 @@ url: "https://pskenny.github.io" # the base hostname & protocol for your site, e
 github_username:  pskenny
 repository: pskenny/pskenny.github.io
 
-header_pages:
-  - blog.md
-  - ideas.md
-
-minima:
-  skin: dark
+include: ["_pages"]
 
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.21.0"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
 

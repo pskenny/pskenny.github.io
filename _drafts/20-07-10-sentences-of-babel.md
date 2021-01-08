@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Sentences Of Babel: A Combinatorial Problem"
 ---
 

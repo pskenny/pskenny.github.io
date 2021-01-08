@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Teaching A Man To Fish: Getting Started With Fish"
 ---
 

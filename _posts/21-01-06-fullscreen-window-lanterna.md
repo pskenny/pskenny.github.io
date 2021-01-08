@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Fullscreen Terminal Windows In Lanterna"
 ---
 
