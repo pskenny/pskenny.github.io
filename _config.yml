@@ -1,9 +1,9 @@
 title: Paul Kenny
-tagline: "A software developer's blog and portfolio"
 description: "PK's blog and portfolio"
 author: Paul Kenny
 baseurl: ""
 url: "https://pskenny.github.io"
+locale: "en"
 
 github_username: pskenny
 repository: pskenny/pskenny.github.io
@@ -18,17 +18,21 @@ defaults:
     values:
       permalink: "ideas"
       layout: single
-      author_profile: true
   - scope:
       path: "_pages/blog.md"
       type: pages
     values:
       permalink: "blog"
       layout: single
-      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
 
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
-minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
