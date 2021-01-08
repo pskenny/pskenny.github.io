@@ -34,5 +34,9 @@ defaults:
 
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 plugins:
-  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
