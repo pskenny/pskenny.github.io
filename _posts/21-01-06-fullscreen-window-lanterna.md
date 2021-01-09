@@ -3,10 +3,9 @@ layout: single
 title: "Fullscreen Terminal Windows In Lanterna"
 tags: ["java", "tui", "lanterna", "ui"]
 ---
+_tldr:_ Here's a code snippet of a fullscreen terminal window using Lanterna.
 
-[Lanterna](https://github.com/mabe02/lanterna) is an easy way to make text only user interfaces in Java that I highly recommend. 
-
-One thing that took me too long to find was how to make a window fullscreen. Add:
+[Lanterna](https://github.com/mabe02/lanterna) is an easy way to make text only user interfaces in Java that I highly recommend. One thing that took me too long to find was how to make a window fullscreen. Add:
 
 ```java
 yourWindow.setHints(java.util.Collections.singleton(Window.Hint.FULL_SCREEN));
