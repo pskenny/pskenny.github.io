@@ -34,6 +34,12 @@ defaults:
       share: true
       related: true
 
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Github"
+
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 plugins:
   - jekyll-paginate
