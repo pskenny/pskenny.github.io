@@ -31,6 +31,8 @@ defaults:
     values:
       show_date: true
       read_time: true
+      share: true
+      related: true
 
 remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 plugins:
