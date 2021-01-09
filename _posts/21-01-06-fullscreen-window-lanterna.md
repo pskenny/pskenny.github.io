@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Fullscreen Terminal Windows In Lanterna"
+tags: ["java", "tui", "lanterna", "ui"]
 ---
 
 [Lanterna](https://github.com/mabe02/lanterna) is an easy way to make text only user interfaces in Java that I highly recommend. 
