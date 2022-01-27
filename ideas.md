@@ -23,3 +23,8 @@ Additional features:
 - Different styles
 - Autostart on login option
 - Regenerate on file changes
+
+### RSS-to-Podcast Service
+
+Get text content of RSS links items, put through [Readability](https://github.com/mozilla/readability), [text summarisation](https://en.wikipedia.org/wiki/Automatic_summarization) and a [TTS](https://en.wikipedia.org/wiki/Speech_synthesis) engine to generate an mp3. Generate a podcast RSS feed and add timestamps in the RSS item description to skip (some podcast clients support this e.g. [AntennaPod](https://antennapod.org/)). 
+
