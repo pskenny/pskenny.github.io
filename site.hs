@@ -39,7 +39,7 @@ config = defaultConfiguration
 
 main :: IO ()
 main = hakyllWith config $ do
-  match "images/*" $ do
+  match (fromList ["images/*", "favicon.ico"]) $ do
     route idRoute
     compile copyFileCompiler
 
