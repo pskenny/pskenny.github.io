@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fullscreen Terminal Windows In Lanterna - Paul Kenny</title>
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../">Paul Kenny</a>
+            </div>
+            <nav>
+                <a href="../pages.html">📃 Pages</a>
+                <a href="../post-list.html">📄 Posts</a>
+                <a href="https://github.com/pskenny">🖖 Github</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>Fullscreen Terminal Windows In Lanterna</h1>
+            <article>
+    <section class="header">
+        Posted on January  6, 2021
+        
+    </section>
+    <section>
+        <p><em>tldr:</em> Here’s a code snippet of a fullscreen terminal window using Lanterna.</p>
+<p><a href="https://github.com/mabe02/lanterna">Lanterna</a> is an easy way to make text only user interfaces in Java that I highly recommend. One thing that took me too long to find was how to make a window fullscreen. Add:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>yourWindow<span class="op">.</span><span class="fu">setHints</span><span class="op">(</span>java<span class="op">.</span><span class="fu">util</span><span class="op">.</span><span class="fu">Collections</span><span class="op">.</span><span class="fu">singleton</span><span class="op">(</span><span class="bu">Window</span><span class="op">.</span><span class="fu">Hint</span><span class="op">.</span><span class="fu">FULL_SCREEN</span><span class="op">));</span></span></code></pre></div>
+<p>Here’s it in a minimal example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">java</span><span class="op">.</span><span class="im">io</span><span class="op">.</span><span class="im">IOException</span><span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">com</span><span class="op">.</span><span class="im">googlecode</span><span class="op">.</span><span class="im">lanterna</span><span class="op">.</span><span class="im">gui2</span><span class="op">.*;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">com</span><span class="op">.</span><span class="im">googlecode</span><span class="op">.</span><span class="im">lanterna</span><span class="op">.</span><span class="im">screen</span><span class="op">.*;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">com</span><span class="op">.</span><span class="im">googlecode</span><span class="op">.</span><span class="im">lanterna</span><span class="op">.</span><span class="im">terminal</span><span class="op">.*;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> TUI <span class="op">{</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">main</span><span class="op">(</span><span class="bu">String</span><span class="op">[]</span> args<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        MultiWindowTextGUI gui<span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        Screen screen<span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        BasicWindow window<span class="op">;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span> <span class="op">(</span>Terminal terminal <span class="op">=</span> <span class="kw">new</span> <span class="fu">DefaultTerminalFactory</span><span class="op">().</span><span class="fu">createTerminal</span><span class="op">())</span> <span class="op">{</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>            screen <span class="op">=</span> <span class="kw">new</span> <span class="fu">TerminalScreen</span><span class="op">(</span>terminal<span class="op">);</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>            screen<span class="op">.</span><span class="fu">startScreen</span><span class="op">();</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>            gui <span class="op">=</span> <span class="kw">new</span> <span class="fu">MultiWindowTextGUI</span><span class="op">(</span>screen<span class="op">);</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            window <span class="op">=</span> <span class="kw">new</span> <span class="fu">BasicWindow</span><span class="op">();</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>            window<span class="op">.</span><span class="fu">setComponent</span><span class="op">(</span><span class="kw">new</span> <span class="bu">Label</span><span class="op">(</span><span class="st">&quot;Hello, fullscreen!&quot;</span><span class="op">));</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>            <span class="co">// Set window to use fullscreen hint</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>            window<span class="op">.</span><span class="fu">setHints</span><span class="op">(</span>java<span class="op">.</span><span class="fu">util</span><span class="op">.</span><span class="fu">Collections</span><span class="op">.</span><span class="fu">singleton</span><span class="op">(</span><span class="bu">Window</span><span class="op">.</span><span class="fu">Hint</span><span class="op">.</span><span class="fu">FULL_SCREEN</span><span class="op">));</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>            gui<span class="op">.</span><span class="fu">addWindowAndWait</span><span class="op">(</span>window<span class="op">);</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span> <span class="cf">catch</span> <span class="op">(</span><span class="bu">IOException</span> ex<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p><em>Note:</em> There are other hints you can use in <code>Window.Hint</code> you can use. Put them in a collection and pass them to the <code>setHints</code> method. I like <code>Window.Hint.NO_DECORATIONS</code>.</p>
+<p><em>Note: Note:</em> As told in the documentation, <em>“Please note that it’s up to the window manager if these hints will be honored or not.”</em></p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/mabe02/lanterna">Github repo</a></li>
+<li><a href="https://mvnrepository.com/artifact/com.googlecode.lanterna/lanterna">Maven repo</a></li>
+<li><a href="https://github.com/mabe02/lanterna/tree/master/docs">Official docs</a></li>
+<li><a href="https://github.com/mabe02/lanterna/blob/master/docs/tutorial/Tutorial01.md">Official tutorial</a></li>
+</ul>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+            </br>
+            Incorrect? Out-of-date? Bad? <a href="https://github.com/pskenny/pskenny.github.io/issues">Open an issue on Github</a> and I'll try to get to it.
+        </footer>
+    </body>
+</html>
