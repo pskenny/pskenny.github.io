@@ -1,5 +1,6 @@
 ---
 title: Git
+tags: ["vcs", "git"]
 ---
 
 Personal Git notes.
