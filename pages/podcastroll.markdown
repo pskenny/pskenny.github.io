@@ -1,5 +1,6 @@
 ---
 title: Podcasts I Like
+tags: ["podcast", "rss"]
 ---
 
 - Lex Fridman Podcast, [website](https://lexfridman.com/podcast/), [RSS](https://lexfridman.com/feed/podcast/)
