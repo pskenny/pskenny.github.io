@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Git - Paul Kenny</title>
+        <link rel="stylesheet" href="../css/default.css" />
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../">Paul Kenny</a>
+            </div>
+            <nav>
+                <a href="../pages.html">📃 Pages</a>
+                <a href="../archive.html">📄 Posts</a>
+                <a href="https://github.com/pskenny">🖖 Github</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>Git</h1>
+            <p>Personal Git notes.</p>
+<h2 id="overwrite-remote-repository-with-local-repository">Overwrite Remote Repository With Local Repository</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init . <span class="co"># Initiate git repo</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="pp">*</span> <span class="co"># Add all files, make sure .gitignore set up before this</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Initial commit&quot;</span> <span class="co"># Commit staged files to repo</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:username/repo.git <span class="co"># Add remote repository called origin, make sure to add SSH key to Github</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--force</span> origin master <span class="co"># Force push the local master branch into the origin repo</span></span></code></pre></div>
+        </main>
+
+        <footer>
+            </br>
+            Incorrect? Out-of-date? Bad? <a href="https://github.com/pskenny/pskenny.github.io/issues">Open an issue on Github</a> and I'll try to get to it.
+        </footer>
+    </body>
+</html>
