@@ -9,6 +9,7 @@ body {
 
 header {
   border-bottom: 0.2rem solid #000;
+  font-family: 'Verdana' 
 }
 
 nav {
@@ -29,6 +30,10 @@ footer {
   border-top: 0.2rem solid #000;
   font-size: 1.2rem;
   color: #555;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Verdana';
 }
 
 h1 {
